@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Wedding reception of Mohammed Nihal & Aysha Hanna. Sunday, 03 January 2027, 12:30 to 3:00 p.m., Al Marri, Koyilandy.">
+<meta property="og:title" content="Nihal &amp; Aysha Reception">
+<meta property="og:description" content="Wedding reception of Mohammed Nihal & Aysha Hanna. Sunday, 03 January 2027, 12:30 to 3:00 p.m., Al Marri, Koyilandy.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nihal-aysha-reception.github.io/">
+<meta property="og:image" content="https://nihal-aysha-reception.github.io/preview.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#e6e9e1">
+<title>Nihal & Aysha Reception</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap">
+<style>
+/* Layout: one narrow column, an arched opening panel, then date, countdown, venue */
+:root{--bg:#e6e9e1;--paper:#fbfaf6;--ink:#2f3d32;--soft:#5f6d60;--sage:#8a9a86;--gold:#a8894f;--line:#d5d9cd;
+--display:"Cormorant Garamond",Georgia,serif;--body:"Jost",system-ui,sans-serif;--ar:"Amiri","Noto Naskh Arabic",serif;color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:300 16px/1.7 var(--body);text-align:center;
+padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:480px;margin:0 auto;padding-block:20px 32px}
+.card{background:var(--paper);border-radius:240px 240px 6px 6px;padding:10px}
+.inner{border:1px solid var(--gold);border-radius:230px 230px 3px 3px;padding:64px 18px 40px}
+section{padding:36px 0;border-top:1px solid var(--line)}
+p{margin:0;text-wrap:balance}
+.small,.invite{text-wrap:balance}
+.ar{font-family:var(--ar);font-size:clamp(1.5rem,7vw,2rem);color:var(--gold);line-height:2}
+.rule{width:8px;height:8px;border:1px solid var(--gold);transform:rotate(45deg);margin:20px auto}
+h1,h2{font-family:var(--display);font-weight:500;margin:0;text-wrap:balance}
+.host{font:600 1.35rem/1.4 var(--display)}
+.small{font-size:.92rem;color:var(--soft)}
+.invite{margin:24px auto 0;max-width:30ch}
+h1{margin-top:18px}
+.name{display:block;font-size:clamp(2.3rem,11vw,3.2rem);line-height:1.1}
+.with{display:block;font:italic 400 1.4rem var(--display);color:var(--gold);margin:14px 0}
+.date{font:500 clamp(5rem,26vw,7rem)/1 var(--display);font-variant-numeric:lining-nums}
+.day{letter-spacing:.14em;text-transform:uppercase;font-size:.85rem;font-weight:400}
+.time{margin-top:16px;font-size:1.1rem;font-weight:400}
+h2{font-size:1.8rem;margin-bottom:12px}
+.count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.count div{background:var(--paper);border-radius:40px 40px 4px 4px;padding:18px 0 10px}
+.count b{display:block;font:500 2rem/1.2 var(--display);font-variant-numeric:tabular-nums lining-nums}
+.count span{font-size:.8rem;color:var(--soft)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
+a.btn{color:var(--paper);background:var(--ink);text-decoration:none;padding:11px 22px;border-radius:40px;font-weight:400;font-size:.95rem;border:1px solid var(--ink)}
+a.btn.alt{background:transparent;color:var(--ink)}
+a.btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+footer{border-top:1px solid var(--line);padding-top:28px;font:italic 1.25rem var(--display);color:var(--soft)}
+#cover{position:fixed;inset:0;z-index:20;border:0;width:100%;background:var(--bg);color:var(--ink);cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:44px;font:400 1rem var(--body);padding:24px;transition:opacity .7s ease,visibility .7s}
+.env{position:relative;display:block;width:min(320px,84vw);aspect-ratio:3/2;perspective:900px;filter:drop-shadow(0 16px 22px rgba(47,61,50,.22))}
+.env span{position:absolute;display:block}
+.back{inset:0;background:#6f806c;border-radius:6px}
+.letter{left:7%;right:7%;top:8%;bottom:6%;background:var(--paper);z-index:1;border-radius:3px;transition:transform .9s .55s ease}
+.letter span{inset:8px;border:1px solid var(--gold);display:flex;align-items:flex-start;justify-content:center;padding-top:14px;font:500 1.5rem var(--display)}
+.front{inset:0;z-index:2;background:var(--sage);clip-path:polygon(0 0,50% 56%,100% 0,100% 100%,0 100%);border-radius:6px}
+.flap{left:0;right:0;top:0;height:62%;z-index:3;transform-origin:top;transition:transform .6s ease,z-index 0s .35s}
+.flap span{inset:0;background:#9bab97;clip-path:polygon(0 0,100% 0,50% 100%)}
+.seal{left:50%;top:60%;width:64px;height:64px;margin:-32px 0 0 -32px;z-index:4;border-radius:50%;background:var(--gold);box-shadow:inset 0 0 0 5px rgba(255,255,255,.18);color:var(--paper);font:500 1.1rem/64px var(--display);transition:opacity .3s}
+.open .flap{transform:rotateX(180deg);z-index:0}
+.open .seal{opacity:0}
+.open .letter{transform:translateY(-48%)}
+#cover.gone{opacity:0;visibility:hidden}
+#cover:focus-visible .env{outline:2px solid var(--gold);outline-offset:8px}
+.locked{overflow:hidden}
+@media (prefers-reduced-motion:reduce){#cover,#cover *{transition:none!important}}
+</style>
+</head>
+<body>
+<button id="cover" type="button" hidden aria-label="Open the wedding invitation">
+ <span class="env" aria-hidden="true"><span class="back"></span><span class="letter"><span>Nihal &amp; Aysha</span></span><span class="front"></span><span class="flap"><span></span></span><span class="seal">N&amp;A</span></span>
+ <span>Tap to open the invitation</span>
+</button>
+<main>
+ <div class="card"><div class="inner">
+  <p class="ar" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+  <div class="rule"></div>
+  <p class="host">Mr. Abdul Rahoof<br>&amp; Mrs. Minsarath</p>
+  <p class="small">Al Marri, Koyilandy</p>
+  <p class="invite">Cordially invite your presence with family on the occasion of the wedding reception of their son</p>
+  <h1><span class="name">Mohammed Nihal</span></h1>
+  <p class="small">Grand S/O Khaderkutty (Late) &amp; Haneefa Kalathil</p>
+  <span class="with">with</span>
+  <h1 style="margin:0"><span class="name">Aysha Hanna</span></h1>
+  <p class="small">D/O Rasik Pandikasalayil &amp; Rahmath Kandiyil Thazhe</p>
+ </div></div>
+
+ <section style="border:0">
+  <p class="day">Sunday</p>
+  <p class="date">03</p>
+  <p class="day">January 2027</p>
+  <p class="small">Rajab 25th, 1448 AH</p>
+  <p class="time">Between 12:30 p.m. &amp; 3:00 p.m.</p>
+  <div class="btns"><a class="btn alt" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+Reception%3A+Mohammed+Nihal+%26+Aysha+Hanna&dates=20270103T070000Z/20270103T093000Z&location=Al+Marri%2C+Opposite+Road%2C+Meethalekandy+Juma+Masjid%2C+Koyilandy">Add to Google Calendar</a></div>
+ </section>
+
+ <section>
+  <h2 id="cdtitle">Counting down</h2>
+  <div class="count" id="count">
+   <div><b id="d">–</b><span>Days</span></div><div><b id="h">–</b><span>Hours</span></div><div><b id="m">–</b><span>Minutes</span></div><div><b id="s">–</b><span>Seconds</span></div>
+  </div>
+ </section>
+
+ <section>
+  <h2>Venue</h2>
+  <p>At their residence<br><strong style="font-weight:500">“Al Marri”, Koyilandy</strong><br>Opposite Road, Meethalekandy Juma Masjid.</p>
+  <div class="btns"><a class="btn" target="_blank" rel="noopener" href="https://maps.app.goo.gl/LMpWe2mEuxECocdc6">Get directions</a></div>
+ </section>
+
+ <footer>We look forward to welcoming you and your family.</footer>
+</main>
+<script>
+(function(){
+ var c=document.getElementById("cover"),m=document.querySelector("main"),r=document.documentElement;
+ var quick=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+ c.hidden=false;m.inert=true;r.classList.add("locked");
+ c.addEventListener("click",function(){
+  if(c.classList.contains("open"))return;
+  c.classList.add("open");
+  setTimeout(function(){c.classList.add("gone");m.inert=false;r.classList.remove("locked");window.scrollTo(0,0)},quick?0:1700);
+ });
+})();
+</script>
+<script>
+(function(){
+ var start=Date.parse("2027-01-03T12:30:00+05:30"),end=Date.parse("2027-01-03T15:00:00+05:30");
+ function tick(){
+  var now=Date.now(),t=Math.max(0,Math.floor((start-now)/1000));
+  if(now>=start){document.getElementById("count").hidden=true;
+   document.getElementById("cdtitle").textContent=now<end?"The reception is on now":"Thank you for your prayers and wishes";return}
+  var v={d:Math.floor(t/86400),h:Math.floor(t/3600)%24,m:Math.floor(t/60)%60,s:t%60};
+  for(var k in v)document.getElementById(k).textContent=v[k];
+ }
+ tick();setInterval(tick,1000);
+})();
+</script>
+</body>
+</html>
